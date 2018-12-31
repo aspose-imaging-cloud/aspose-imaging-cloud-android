@@ -1,4 +1,4 @@
-# Aspose.Imaging for Android SDK
+# Aspose.Imaging for Cloud Android SDK
 [Aspose.Imaging for Cloud](https://products.aspose.cloud/imaging/cloud) is a true REST API that enables you to perform a wide range of image processing operations including creation, manipulation and conversion in the cloud, with zero initial costs. Our Cloud SDKs are wrappers around REST API in various programming languages, allowing you to process images in language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. 
 
 This repository contains test project and instructions on how to use [Aspose.Imaging for Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) for Android. This SDK allows you to work with Aspose.Imaging for Cloud REST APIs in your Android applications quickly and easily, with zero initial cost.
@@ -70,7 +70,7 @@ repositories {
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: 'latestVersion'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '18.12'
     ...
 }
 ```
