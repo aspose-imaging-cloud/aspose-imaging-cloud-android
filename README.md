@@ -1,7 +1,7 @@
-# Aspose.Imaging for Cloud Android SDK
-[Aspose.Imaging for Cloud](https://products.aspose.cloud/imaging/cloud) is a true REST API that enables you to perform a wide range of image processing operations including creation, manipulation and conversion in the cloud, with zero initial costs. Our Cloud SDKs are wrappers around REST API in various programming languages, allowing you to process images in language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. 
+# Aspose.Imaging Cloud Android SDK
+[Aspose.Imaging Cloud](https://products.aspose.cloud/imaging/cloud) is a true REST API that enables you to perform a wide range of image processing operations including creation, manipulation and conversion in the cloud, with zero initial costs. Our Cloud SDKs are wrappers around REST API in various programming languages, allowing you to process images in language of your choice quickly and easily, gaining all benefits of strong types and IDE highlights. 
 
-This repository contains test project and instructions on how to use [Aspose.Imaging for Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) for Android. This SDK allows you to work with Aspose.Imaging for Cloud REST APIs in your Android applications quickly and easily, with zero initial cost.
+This repository contains test project and instructions on how to use [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) for Android. This SDK allows you to work with Aspose.Imaging Cloud REST APIs in your Android applications quickly and easily, with zero initial cost.
 
 To use this SDK, you will need App SID and App Key which can be looked up at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/#/apps) (free registration in Aspose Cloud is required for this).
 
@@ -45,11 +45,11 @@ Process options, change and return image in the PNG format:
 * Image features extraction (for now, AKAZE detector is supported)
 
 # Usage
-The project in this repo references [Aspose.Imaging for Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) either by placing the binary inside *app/libs* folder with manual handling of transitive dependenices (meant for internal usage only), or by simple addition of the repository dependency with configuring the project accordingly (user scenario) - the behavior is controlled with *CI* environment variable (see [build.gradle](app/build.gradle)).
+The project in this repo references [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) either by placing the binary inside *app/libs* folder with manual handling of transitive dependenices (meant for internal usage only), or by simple addition of the repository dependency with configuring the project accordingly (user scenario) - the behavior is controlled with *CI* environment variable (see [build.gradle](app/build.gradle)).
 
 For the users, the following basic instructions should be applied.
 
-1. Since this library is consuming Aspose.Imaging for Cloud web APIs, please add *INTERNET* permission to your manifest.
+1. Since this library is consuming Aspose.Imaging Cloud web APIs, please add *INTERNET* permission to your manifest.
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.your.product.application">
@@ -70,7 +70,7 @@ repositories {
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '18.12'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.1'
     ...
 }
 ```
@@ -100,18 +100,18 @@ dependencies {
 ```
 
 # Examples
-Please, refer to [Aspose.Imaging for Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
+Please, refer to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
 
 # Tests
 Tests are intended for internal usage only with sources be taken from [Aspose.Storage for Cloud Java SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java).
 
 # Licensing
-All Aspose.Imaging for Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
+All Aspose.Imaging Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
 
 # Contact Us
 Your feedback is very important to us. Please feel free to contact via
 + [**Free Support Forum**](https://forum.aspose.cloud/c/imaging)
-+ [**Paid Support Helpdesk**](https://helpdesk.aspose.imaging/)
++ [**Paid Support Helpdesk**](https://helpdesk.aspose.cloud/)
 
 # Resources
 + [**Web API reference**](https://apireference.aspose.cloud/imaging/)
