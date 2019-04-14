@@ -91,7 +91,7 @@ repositories {
     ...
 }
 ```
-3. Add dependency to [Aspose.Imaging for Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java), starting from *18.11* (previous versions may not work with Android).
+3. Add dependency to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java), starting from *18.11* (previous versions may not work with Android).
 ```gradle
 dependencies {
     ...
@@ -104,7 +104,7 @@ dependencies {
 Please, refer to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
 
 # Tests
-Tests are intended for internal usage only with sources be taken from [Aspose.Storage for Cloud Java SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java).
+Tests are intended for internal usage only with sources be taken from [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
 
 # Licensing
 All Aspose.Imaging Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
