@@ -19,18 +19,9 @@ android {
 
     buildToolsVersion "28.0.3"
 
-    packagingOptions {
-        exclude 'META-INF/jersey-module-version'
-    }
-
     lintOptions {
         abortOnError false
     }
-}
-
-configurations.all {
-    exclude group: "commons-collections", module: "commons-collections"
-    exclude module: 'xpp3'
 }
 
 repositories {
@@ -41,12 +32,13 @@ repositories {
 dependencies {
 
     if (!System.getenv('CI')) {
-        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.1'
+        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.4'
     }
     else
     {
         androidTestImplementation fileTree(include: ['*.jar'], dir: 'libs')
         implementation 'org.apache.commons:commons-lang3:3.3.2'
+        implementation 'com.google.code.gson:gson:2.8.5'
         implementation 'commons-io:commons-io:2.4'
         implementation 'com.brsanthu:migbase64:2.2'
         implementation 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.11'
@@ -54,11 +46,6 @@ dependencies {
         implementation 'com.fasterxml.jackson.core:jackson-annotations:2.8.11'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.8.11.1'
         implementation 'org.simpleframework:simple-xml:2.7.1'
-    }
-
-    androidTestImplementation ('com.aspose:aspose-cloud-storage:1.0.1') {
-        exclude module: 'xercesImpl'
-        exclude module: 'httpcore'
     }
 
     implementation 'com.android.support:appcompat-v7:22.2.1'
