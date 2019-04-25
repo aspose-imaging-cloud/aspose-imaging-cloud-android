@@ -9,24 +9,40 @@ The solution uses [Gradle Wrapper](https://github.com/gradle/gradle/tree/master/
 
 # Features
 ### Image Formats Support
-Process options, change and return image in the same format:
+Export the following images to various formats (generally supported ones are BMP, PSD, JPEG, TIFF, GIF, PNG, JPEG2000, WEBP and PDF):
+* BMP
+* GIF
+* DJVU
+* WMF
+* EMF
+* JPEG
+* JPEG2000
 * PSD
-* JPG
+* TIFF
+* WEBP
 * PNG
+* DICOM
+* CDR
+* ODG
+* DNG
+* SVG
+* CMX
+
+Process options, change and return images in the same format:
+* PSD
+* JPEG
 * TIFF
 * GIF
 * BMP
 * JPEG2000
+* WEBP
 
-Process options, change and return image in the PNG format:
-* DICOM
-* DNG
-* ODG
+Process options, change and return images in any supported export format:
 * EMF
 * WMF
 
 ### Supported Imaging Operations
-* Export to various image formats (currently, all supported formats can be exported to BMP, PSD, JPG, TIFF, GIF, PNG, JPEG2000 or WebP)
+* Export 
 * Resize
 * Crop
 * Rotate and Flip
@@ -43,6 +59,15 @@ Process options, change and return image in the PNG format:
 * Image search by custom registered tags
 * Image comparison and similarity detection
 * Image features extraction (for now, AKAZE detector is supported)
+
+# Storage API support
+#### Since version 19.4, SDK includes support of storage operations for better user experience and unification, so now there's no need to use 2 different SDKs!
+
+It gives you an ability to:
+* Upload, download, copy, move and delete files, including versions handling (if you are using Cloud storage that supports this feature - true by default)
+* Create, copy, move and delete folders
+* Copy and move files and folders accross separate storages in scope of a single operation
+* Check if certain file, folder or storage exists
 
 # Usage
 The project in this repo references [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java) either by placing the binary inside *app/libs* folder with manual handling of transitive dependenices (meant for internal usage only), or by simple addition of the repository dependency with configuring the project accordingly (user scenario) - the behavior is controlled with *CI* environment variable (see [build.gradle](app/build.gradle)).
@@ -66,36 +91,12 @@ repositories {
     ...
 }
 ```
-3. Add dependency to [Aspose.Imaging for Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java), starting from *18.11* (lower versions may not work).
+3. Add dependency to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java), starting from *18.11* (previous versions may not work with Android).
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.1'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.4'
     ...
-}
-```
-4. *Use in case of issues*. Add the following exclusions to get rid of transitive dependencies/classes duplication issues. 
-```gradle
-configurations.all {
-    exclude group: "commons-collections", module: "commons-collections"
-    exclude module: "xpp3"
-}
-```
-5. If you also use [Aspose.Storage for Cloud Java SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java) in your project (which is probably the case), please add the following options (in combination with the step proposed above) for it to work on Android. The following config may change with new [Aspose.Storage for Cloud Java SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java) versions to come.
-```gradle
-android {
-    ...
-    packagingOptions {
-        exclude 'META-INF/jersey-module-version'
-    }
-}
-
-dependencies {
-    ...
-    implementation ('com.aspose:aspose-cloud-storage:1.0.1') {
-        exclude module: 'xercesImpl'
-        exclude module: 'httpcore'
-    }
 }
 ```
 
@@ -103,7 +104,7 @@ dependencies {
 Please, refer to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
 
 # Tests
-Tests are intended for internal usage only with sources be taken from [Aspose.Storage for Cloud Java SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java).
+Tests are intended for internal usage only with sources be taken from [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
 
 # Licensing
 All Aspose.Imaging Cloud SDKs, helper scripts and templates are licensed under [MIT License](LICENSE).
