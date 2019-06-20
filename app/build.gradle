@@ -25,14 +25,14 @@ android {
 }
 
 repositories {
-    maven { url 'http://artifact.aspose.cloud/repo/' }
+    maven { url 'https://repository.aspose.cloud/repo/' }
     maven { url 'http://repo1.maven.org/maven2' }
 }
 
 dependencies {
 
-    if (!System.getenv('CI')) {
-        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.4'
+    if (System.getenv('CI') == 'false') {
+        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.6'
     }
     else
     {
