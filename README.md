@@ -97,13 +97,24 @@ repositories {
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.6'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.7'
     ...
 }
 ```
 
 # Examples
 Please, refer to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
+
+### Aspose Cloud-hosted service VS on-premise deployment
+Starting from v19.7, you can choose either to use Aspose Cloud-hosted image processing service (the standard way) or the Docker image from Docker Hub deployed on-premise to serve the requests.
+The details about key differences and deployment process is described on the dedicated Docker Hub page.
+
+To succeed with your on-premise service usage by the SDK, you need to:
+1. Use the new API class constructors with either single base URL parameter, or additional API version and debug mode parameters.
+```java
+ImagingApi imagingApi = new ImagingApi("yourServiceUrl");
+```
+2. Set *storage* or *storageName* parameters for each request where they're present (mandatory!).
 
 # Tests
 Tests are intended for internal usage only with sources be taken from [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java).
