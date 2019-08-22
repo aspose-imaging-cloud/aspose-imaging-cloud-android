@@ -98,7 +98,7 @@ repositories {
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.7'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.8'
     ...
 }
 ```
