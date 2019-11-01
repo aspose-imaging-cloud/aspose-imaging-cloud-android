@@ -48,7 +48,7 @@ dependencies {
         implementation 'org.simpleframework:simple-xml:2.7.1'
     }
 
-    implementation 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
     androidTestImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test:runner:1.0.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
