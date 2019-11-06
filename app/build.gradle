@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+println "setting global timeout for apk installation to 10 minutes"
+com.android.ddmlib.DdmPreferences.setTimeOut(600000)
+
 android {
     compileSdkVersion 22
     defaultConfig {
