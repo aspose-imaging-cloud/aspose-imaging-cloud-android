@@ -49,6 +49,7 @@ dependencies {
         implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9'
         implementation 'org.simpleframework:simple-xml:2.7.1'
+        implementation 'org.apache.tika:tika-core:1.10'
     }
 
     implementation 'com.android.support:appcompat-v7:22.2.1'
