@@ -1,11 +1,14 @@
 apply plugin: 'com.android.application'
 
+println "setting global timeout for apk installation to 10 minutes"
+com.android.ddmlib.DdmPreferences.setTimeOut(600000)
+
 android {
-    compileSdkVersion 22
+    compileSdkVersion 24
     defaultConfig {
         applicationId "com.aspose.imaging.android.test"
-        minSdkVersion 22
-        targetSdkVersion 22
+        minSdkVersion 24
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -32,7 +35,7 @@ repositories {
 dependencies {
 
     if (System.getenv('CI') == 'false') {
-        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '19.10'
+        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '20.7'
     }
     else
     {
@@ -46,9 +49,10 @@ dependencies {
         implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.9'
         implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.9'
         implementation 'org.simpleframework:simple-xml:2.7.1'
+        implementation 'org.apache.tika:tika-core:1.10'
     }
 
-    implementation 'com.android.support:appcompat-v7:22.2.1'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
     androidTestImplementation 'junit:junit:4.12'
     androidTestImplementation('com.android.support.test:runner:1.0.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
