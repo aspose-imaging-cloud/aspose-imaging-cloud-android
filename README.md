@@ -89,6 +89,18 @@ dependencies {
 ## Quick Examples
 Please, refer to [Aspose.Imaging Cloud Java SDK examples](https://github.com/aspose-imaging-cloud/aspose-imaging-cloud-java#quick-examples).
 
+
+## Convert JPG to PNG in Android with Java
+
+```java
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+	ImagingApi api = new ImagingApi("MY_CLIENT_SECRET", "MY_CLIENT_ID");
+
+	ConvertImageRequest request =  new ConvertImageRequest("sample.jpg", "png", "tempFolder", "My_Storage_Name");
+	byte[] response = api.convertImage(request);
+```
+
+
 #### Aspose Cloud-hosted service VS on-premise deployment (*experimental feature*)
 Starting from v19.7, you can choose either to use Aspose Cloud-hosted image processing service (the standard way) or the Docker image from Docker Hub deployed on-premise to serve the requests.
 The details about key differences and deployment process will be described on the dedicated Docker Hub page as soon as it's released.
