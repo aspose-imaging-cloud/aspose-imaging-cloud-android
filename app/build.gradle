@@ -35,7 +35,7 @@ repositories {
 dependencies {
 
     if (System.getenv('CI') == 'false') {
-        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '20.12'
+        implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '21.2'
     }
     else
     {
