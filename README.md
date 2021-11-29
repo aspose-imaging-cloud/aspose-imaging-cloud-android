@@ -28,6 +28,8 @@ Export the following images to various formats (generally supported ones are BMP
 * DNG
 * SVG
 * CMX
+* TGA
+* APNG
 
 Process options, change and return images in the same format:
 * PSD
@@ -100,7 +102,7 @@ Add dependency to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imag
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '21.6'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '21.11'
     ...
 }
 ```
