@@ -20,13 +20,13 @@ The solution uses [Gradle Wrapper](https://github.com/gradle/gradle/tree/master/
 - Merge multiple TIFF images.
 
 ## Read & Write Image Formats
-BMP, GIF, JPEG, JPEG2000, PSD, TIFF, WEBP, PNG, WMF, EMF, SVG
+BMP, GIF, JPEG, JPEG2000, PSD, TIFF, WEBP, PNG, WMF, EMF, SVG, TGA, APNG
 
 ## Save Image As
 PDF, DICOM
 
 ## Read Image Formats
-DJVU, DICOM, CDR, CMX, ODG, DNG, EPS
+DJVU, DICOM, CDR, CMX, ODG, DNG, EPS, EMZ, WMZ, SVGZ
 
 ## Enhancements in Version 20.12
 
@@ -44,6 +44,7 @@ DJVU, DICOM, CDR, CMX, ODG, DNG, EPS
 - Support to load and convert **EPS** files to **PDF/A** format.
 
 ## Storage API support
+
 Since version 19.4, SDK includes support of storage operations for better user experience and unification, so now there's no need to use 2 different SDKs!
 
 It gives you an ability to:
@@ -80,7 +81,7 @@ Add dependency to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imag
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '21.6'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '21.11'
     ...
 }
 ```
