@@ -81,7 +81,7 @@ Add dependency to [Aspose.Imaging Cloud Java SDK](https://github.com/aspose-imag
 ```gradle
 dependencies {
     ...
-    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '22.4'
+    implementation group: 'com.aspose', name: 'aspose-imaging-cloud', version: '23.5'
     ...
 }
 ```
